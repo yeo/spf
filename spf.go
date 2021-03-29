@@ -106,7 +106,7 @@ var (
 // Default value for the maximum number of DNS lookups while resolving SPF.
 // RFC is quite clear 10 must be the maximum allowed.
 // https://tools.ietf.org/html/rfc7208#section-4.6.4
-const defaultMaxLookups = 10
+const defaultMaxLookups = 20
 
 // Option type, for setting options. Users are expected to treat this as an
 // opaque type and not rely on the implementation, which is subject to change.

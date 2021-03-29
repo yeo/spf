@@ -153,7 +153,8 @@ func CheckHostWithSender(ip net.IP, helo, sender string, opts ...Option) (Result
 		maxcount: defaultMaxLookups,
 		sender:   sender,
 		ctx:      context.TODO(),
-		resolver: defaultResolver,
+		//resolver: defaultResolver,
+		resolver: net.DefaultResolver,
 	}
 
 	for _, opt := range opts {
